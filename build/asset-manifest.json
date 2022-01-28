@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-shop-apple/static/css/main.f1a280ba.css",
-    "main.js": "/react-shop-apple/static/js/main.ecdc8a8d.js",
-    "static/js/787.23170c61.chunk.js": "/react-shop-apple/static/js/787.23170c61.chunk.js",
-    "index.html": "/react-shop-apple/index.html",
-    "main.f1a280ba.css.map": "/react-shop-apple/static/css/main.f1a280ba.css.map",
-    "main.ecdc8a8d.js.map": "/react-shop-apple/static/js/main.ecdc8a8d.js.map",
-    "787.23170c61.chunk.js.map": "/react-shop-apple/static/js/787.23170c61.chunk.js.map"
+    "main.css": "/react-shop-apple/build/static/css/main.f1a280ba.css",
+    "main.js": "/react-shop-apple/build/static/js/main.0a4b41cb.js",
+    "static/js/787.23170c61.chunk.js": "/react-shop-apple/build/static/js/787.23170c61.chunk.js",
+    "index.html": "/react-shop-apple/build/index.html",
+    "main.f1a280ba.css.map": "/react-shop-apple/build/static/css/main.f1a280ba.css.map",
+    "main.0a4b41cb.js.map": "/react-shop-apple/build/static/js/main.0a4b41cb.js.map",
+    "787.23170c61.chunk.js.map": "/react-shop-apple/build/static/js/787.23170c61.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1a280ba.css",
-    "static/js/main.ecdc8a8d.js"
+    "static/js/main.0a4b41cb.js"
   ]
 }
