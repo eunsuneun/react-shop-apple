@@ -36,3 +36,54 @@
     transform: rotate(360deg);
   }
 }
+
+/* common */
+a {
+  color: inherit;
+}
+/* navbar */
+.navbar-brand {
+  padding-top: 0;
+}
+.logo {
+  width: 200px;
+}
+.navbar-dark .navbar-toggler {
+  border: 0;
+}
+
+/* visual */
+.visual {
+  padding: 200px 0;
+  background: url('https://www.customellow.com/images/rom-main.jpg') center 10%;
+  color: whitesmoke;
+}
+.visual h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.visual h1 {
+  font-size: 58px;
+}
+
+/* card */
+.card {
+  border: 0;
+  margin: 50px auto;
+}
+.card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card .title {
+  font-size: 18px;
+}
+.card .desc {
+  font-size: 14px;
+}
+
+/* detail */
+.detail {
+  margin: 100px auto;
+}

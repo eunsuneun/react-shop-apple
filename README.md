@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React 리액트 기초부터 쇼핑몰 프로젝트까지! (코딩애플) 강의 중 Part 2 : 쇼핑몰 프로젝트
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
