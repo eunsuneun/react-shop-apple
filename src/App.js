@@ -10,6 +10,7 @@ import { Route, Routes, Link } from "react-router-dom";
 
 function App() {
   const [data, setData] = useState(Data);
+  const [stock, setStock] = useState([10, 20, 30])
   const addProduct = (prd) => {
     const newData = [
       ...data,
@@ -45,7 +46,7 @@ function App() {
         <Route path='/about' element={<About />}></Route>
       </Routes>
       <Routes>
-        <Route path='/detail/:id' element={<Detail data={data} />}></Route>
+        <Route path='/detail/:id' element={<Detail data={data} stock={stock} setStock={setStock} />}></Route>
       </Routes>
     </div>
   );

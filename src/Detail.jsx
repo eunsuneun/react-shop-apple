@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import Info from './Info';
 
 let AlertBox = styled.div`
   background: #eee;
@@ -11,12 +12,18 @@ let AlertBox = styled.div`
   color : ${ props => props.color };
 `;
 
-const Detail = ({ data }) => {
+const Detail = ({ data, stock, setStock }) => {
   const [alert, setAlert] = useState(false);
   const { id } = useParams();
+  const onClickOrder = (i) => {
+    if(stock[i] <= 0) { return; }
+    const newStock = [...stock];
+    newStock[i]--; 
+    setStock(newStock);
+  };
   const product = data.find((prd) => prd.id == id );
   useEffect(() => {
-    let timer = setTimeout(() => { setAlert(true); console.log('hi') }, 1000);
+    let timer = setTimeout(() => { setAlert(true); }, 1000);
     return () => {
       clearTimeout(timer);
     }
@@ -31,7 +38,8 @@ const Detail = ({ data }) => {
           <h4 className="pt-5">{product.title}</h4>
           <p className="pt-2">{product.desc}</p>
           <p className="pt-2">{product.price}원</p>
-          <button className="btn btn-danger mt-2">주문하기</button>
+          <Info stock={stock[id]}/>
+          <button className="btn btn-danger mt-2" onClick={() => onClickOrder(id)}>주문하기</button>
           {alert 
             ? <AlertBox color={'red'}>재고가 얼마 남지 않았습니다.</AlertBox>
             : null

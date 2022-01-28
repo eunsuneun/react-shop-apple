@@ -6,12 +6,17 @@ import axios from 'axios';
 const Main = ({ data, addProduct }) => {
   const [more, setMore] = useState(true);
   const onClickMore = () => {
-    axios.get('https://codingapple1.github.io/shop/data2.json').then((result) => {
+    // 로딩 중 UI 띄워주는 코드
+    document.querySelector('.card .row > a').classList.add('loading');
+    axios.get('https://eunsuneun.github.io/react-shop-apple/public/data2.json').then((result) => {
       // 요청 성공 시
       setMore(false);
       addProduct(result.data);
+      // 로딩 중 UI 제거하는 코드
+      document.querySelector('.card .row > a').classList.remove('loading');
     }).catch(() => {
       // 요청 실패 시
+      // 로딩 중 UI 제거하는 코드
     });
   };
   return (

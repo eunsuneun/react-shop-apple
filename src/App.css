@@ -72,6 +72,9 @@ a {
   border: 0;
   margin: 50px auto;
 }
+.card .row > a.loading {
+  background: red;
+}
 .card img {
   width: 100%;
   margin-bottom: 20px;
