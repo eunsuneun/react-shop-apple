@@ -6,11 +6,12 @@ import Data from './data.js';
 import Main from './Main.jsx';
 import About from './About.jsx';
 import Detail from './Detail.jsx';
+import Cart from './Cart';
 import { Route, Routes, Link } from "react-router-dom";
 
 function App() {
   const [data, setData] = useState(Data);
-  const [stock, setStock] = useState([10, 20, 30])
+  const [stock, setStock] = useState([10, 20, 30, 40, 50, 60]);
   const addProduct = (prd) => {
     const newData = [
       ...data,
@@ -47,6 +48,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path='/detail/:id' element={<Detail data={data} stock={stock} setStock={setStock} />}></Route>
+      </Routes>
+      <Routes>
+        <Route path='/cart' element={<Cart data={data} stock={stock} />}></Route>
       </Routes>
     </div>
   );

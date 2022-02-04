@@ -19,6 +19,7 @@ const Main = ({ data, addProduct }) => {
       // 로딩 중 UI 제거하는 코드
     });
   };
+
   return (
     <>
       {/* visual */}
